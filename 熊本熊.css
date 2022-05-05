@@ -1,0 +1,198 @@
+.face {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    box-sizing: border-box;
+}
+
+.face::before{
+    content: "";
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    background: red;
+}
+.face::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    background: red;
+}
+
+/* Eyes */
+.leftEye{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+.leftEye::before{
+    content: "";
+    width:40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rightEye{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+.rightEye::before{
+    content: "";
+    width:40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Ears */
+.leftEar{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left:10%;
+}
+.leftEar::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rightEar{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    right:10%;
+}
+.rightEar::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* mouth */
+.mouth{
+    width: 120px;
+    height: 80px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mouth::before{
+    content: "";
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mouth::after{
+    content: "";
+    width: 65px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* v */
+.v{
+    width: 40px;
+    height: 35px;
+    border: 1px solid black;
+    /* background-color: white; */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.v::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    background-color: white;
+    position: absolute;
+    left: -50%;
+    transform: skew(45deg);
+}
+.v::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    background-color: white;
+    position: absolute;
+    right: -50%;
+    transform: skew(-45deg);
+}
